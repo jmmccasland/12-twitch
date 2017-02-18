@@ -1,5 +1,5 @@
 export default null;
-// import data from './data.json';
+import data from './data.json';
 
 // IMG SWAP
 const gameImg = document.querySelector('.game__img');
