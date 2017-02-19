@@ -1,10 +1,17 @@
-export default null;
-import data from './data.json';
+export default function createGameElement(item) {
+  const gameItem = document.createElement('div');
+  gameItem.classList = ('game-item');
 
-// IMG SWAP
-const gameImg = document.querySelector('.game__img');
-gameImg.src = data.top[0].game.box.large;
+  gameItem.innerHTML = `
+  <h3 class='game-item__name'></h3>
+  <h4 class='game-item__popularity'></h4>
+  <img class="game-item__pic" src="" alt="">
+  `;
 
-// TITLE SWAP
-const gameTitle = document.querySelector('.game__title');
-gameTitle.innerText = 'CONNECTED, WOO WOO';
+  gameItem.querySelector('.game-item__name').innerText = item.name;
+  gameItem.querySelector('.game-item__popularity').innerText = `${item.popularity} Viewers`;
+  gameItem.querySelector('.game-item__pic').src = item.box.large;
+  gameItem.querySelector('.game-item__pic').alt = item.name;
+
+  return gameItem;
+}
