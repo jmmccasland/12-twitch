@@ -1,6 +1,6 @@
 export default function createGameElement(item) {
   const gameItem = document.createElement('div');
-  gameItem.classList = ('game-item');
+  gameItem.className = ('game-item');
 
   gameItem.innerHTML = `
   <h3 class='game-item__name'></h3>

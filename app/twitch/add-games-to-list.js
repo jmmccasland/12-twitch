@@ -1,3 +1,7 @@
-import createGameElemnt from './create-game-element';
+import createGameElement from './create-game-element';
 
-export default null;
+export default function showGamesInList(item) {
+
+  createGameElement(item);
+
+}
