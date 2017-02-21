@@ -4,7 +4,7 @@ export default function showGamesInList(parentEl, data) {
 
 
   // clearing grid
-    parentEl.innerHTML = '';
+  parentEl.innerHTML = ' ';
 
   // running loop
   for (let i = 0; i < data.length; i += 1) {
