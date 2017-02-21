@@ -10,8 +10,10 @@ export default function createGameElement(item) {
 
   gameItem.querySelector('.game-item__name').innerText = item.name;
   gameItem.querySelector('.game-item__popularity').innerText = `${item.popularity} Viewers`;
-  gameItem.querySelector('.game-item__pic').src = item.box.large;
-  gameItem.querySelector('.game-item__pic').alt = item.name;
+
+  const picEl = gameItem.querySelector('.game-item__pic');
+  picEl.src = item.box.large;
+  picEl.alt = item.name;
 
   return gameItem;
 }
