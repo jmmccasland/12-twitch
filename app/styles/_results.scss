@@ -1,0 +1,20 @@
+// RESULT STYLES
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 1px solid red;
+  margin-left: -$m-gutter;
+  margin-right: -$m-gutter;
+
+  > * {
+    flex-basis: calc(100% / 5 - #{$m-gutter} - #{$m-gutter});
+    flex-grow: 1;
+    min-width: 10rem;
+    margin: $m-gutter;
+  }
+}
+
+.results__item {
+  border: 0.1rem solid black;
+}

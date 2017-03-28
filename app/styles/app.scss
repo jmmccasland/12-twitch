@@ -1,40 +1,19 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
+
+// Colors
+$c-darkerpurple: #17141f;
+$c-darkpurple: #201c2b;
+$c-purple: #6441a4;
+
+
+// Measurments
+$m-gutter: 1rem;
+
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'resets';
-
-
-// LAYOUT STYLES
-
-.main {
-  padding: 1rem;
-}
-
-.container {
-  max-width: 65rem;
-  margin: 0 auto;
-  border: 1px solid green;
-}
-
-
-
-// RESULT STYLES
-
-.results {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  border: 1px solid red;
-
-  > * {
-    flex-basis: calc(100% / 5);
-    min-width: 15rem;
-    // margin: 0 1rem;
-  }
-
-}
+@import 'layout';
+@import 'results';
