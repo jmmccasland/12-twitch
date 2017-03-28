@@ -3,15 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  border: 1px solid red;
-  margin-left: -$m-gutter;
-  margin-right: -$m-gutter;
+  margin-left: -$m-gutter / 2;
+  margin-right: -$m-gutter / 2;
 
   > * {
-    flex-basis: calc(100% / 5 - #{$m-gutter} - #{$m-gutter});
+    flex-basis: calc(100% / 5 - #{$m-gutter / 2} - #{$m-gutter / 2});
     flex-grow: 1;
     min-width: 10rem;
-    margin: $m-gutter;
+    margin: $m-gutter / 2;
   }
 }
 
