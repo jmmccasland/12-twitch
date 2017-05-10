@@ -1,0 +1,48 @@
+// LAYOUT STYLES
+
+.section {
+  padding: $m-gutter;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+
+// Side Bar Tricks
+  // Wraps the whole application
+.wrapper {
+  display: flex;
+
+  // centers game results in between sidebars
+  &__results {
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-left: 15rem;
+    margin-right: 22rem;
+  }
+}
+
+// Left Sidebar
+.sidebar-left {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 15rem;
+  color: $c-white;
+  background: $c-darkerpurple;
+}
+
+// Right sidebar
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 22rem;
+  background: $c-grey;
+}

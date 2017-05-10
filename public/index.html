@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>10-twitch</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
+  <!-- Should contain the three major elements of this page -->
+  <div class="wrapper">
+
+    <!-- Left Sidebar -->
+    <div class="sidebar-left">
+      <div class="stack">
+        <div class="stack__group stack__group--pad">
+          <img class="stack__item logo" src="./images/logo.png" alt="">
+          <input class="stack__item search" type="text" placeholder="Search">
+        </div>
+
+        <!-- List Items -->
+        <div class="stack__group">
+          <ul class="list">
+            <li class="list__item list__item--left selected">
+              <span class="fa fw fa-gamepad"></span> Games
+            </li>
+            <li class="list__item list__item--left">
+              <span class="fa fw fa-users"></span> Communities
+            </li>
+            <li class="list__item list__item--left">
+              <span class="fa fw fa-video-camera"></span> Channels
+            </li>
+            <li class="list__item list__item--left">
+              <span class="fa fw fa-play"></span> Videos
+            </li>
+            <li class="list__item list__item--left">
+              <span class="fa fw fa-star"></span> Creative
+            </li>
+          </ul>
+        </div>
+
+        <div class="stack__group stack__group--pad">
+          <h4 class="group-header">Recommended Channels<h4>
+
+          <div class="channel">
+            <img class="channel-image" src="http://placecage.com/200/200" alt="">
+            <div class="channel-info">
+              <h3 class="channel-name">Channel Name</h3>
+              <p class="channel-status">Streaming Music</p>
+            </div>
+          </div>
+          <div class="channel">
+            <img class="channel-image" src="http://placecage.com/200/200" alt="">
+            <div class="channel-info">
+              <h3 class="channel-name">Channel Name</h3>
+              <p class="channel-status">Streaming Music</p>
+            </div>
+          </div>
+          <div class="channel">
+            <img class="channel-image" src="http://placecage.com/200/200" alt="">
+            <div class="channel-info">
+              <h3 class="channel-name">Channel Name</h3>
+              <p class="channel-status">Streaming Music</p>
+            </div>
+          </div>
+          <div class="channel">
+            <img class="channel-image" src="http://placecage.com/200/200" alt="">
+            <div class="channel-info">
+              <h3 class="channel-name">Channel Name</h3>
+              <p class="channel-status">Streaming Music</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack__group stack__group--pad">
+          <h4 class="group-header">More with Twitch</h4>
+          <div class="links">
+            <ul class="link-list">
+              <li>About</li>
+              <li>Blog</li>
+              <li>Cookie Policy</li>
+              <li>Help</li>
+              <li>Language</li>
+              <li>Partners</li>
+              <li>Store</li>
+            </ul>
+
+            <ul class="link-list">
+              <li>Advertisers</li>
+              <li>Creative</li>
+              <li>Developers</li>
+              <li>Jobs</li>
+              <li>Music</li>
+              <li>Press</li>
+              <li>Terms</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stack__group stack__group--pad">
+          <div class="buttons">
+            <button class="button">Log In</button>
+            <button class="button">Sign Up</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- // Game Item Results -->
+  <div class="wrapper__results">
+    <div class="section">
+    <div class="container">
+      <h1 class="section-title">All Games</h1>
+      <ul class="results">
+        <li class="results__item">
+          <img src="http://placehold.it/200x250" alt="" class="game__img">
+
+          <h4 class="game__title">Game Title</h4>
+
+          <p><span class="game__numViewers">####</span><span class="viewers"> viewers</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <!-- Right Sidebar -->
+  <div class="sidebar-right">
+    <div class="section">
+
+      <h1>You're Not Logged In!</h1>
+
+      <div class="stack">
+
+        <p class="stack__item">If you don't have an account, go ahead and sign up. It takes like two seconds and it's totally worth it.</p>
+
+        <!-- List Items -->
+        <div class="stack__group">
+          <ul class="list">
+            <li class="list__item list__item--right">Follow channels you enjoy watching</li>
+            <li class="list__item list__item--right">Get notifications when they go live</li>
+            <li class="list__item list__item--right">Chat with your fellow viewers</li>
+            <li class="list__item list__item--right">Send and receive direct messages</li>
+            <li class="list__item list__item--right">Start your own broadcast</li>
+          </ul>
+        </div>
+
+        <div class="stack__group">
+          <div class="buttons buttons--right">
+            <button class="button">Log In</button>
+            <button class="button">Sign Up</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="/app.js" charset="utf-8"></script>
 </body>
 </html>

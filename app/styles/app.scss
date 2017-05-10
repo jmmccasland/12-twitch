@@ -1,6 +1,142 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+
+// Colors
+$c-darkerpurple: #17141f;
+$c-darkpurple: #201c2b;
+$c-purple: #6441a4;
+$c-grey: #efeef1;
+$c-slategrey: #433f4a;
+$c-white: #fff;
+
+
+// Measurments
+$m-gutter: 1.25rem;
+
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
+@import 'resets';
+@import 'layout';
+@import 'results';
+@import 'components';
+
+
+.logo {
+  display: block;
+  width: 6rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.search {
+  border: 0.12rem solid darken($c-purple, 20%);
+  outline: none;
+  width: 100%;
+  padding-left: $m-gutter / 2;
+  background: $c-darkpurple;
+  color: $c-white;
+
+  &:focus {
+    border: 0.12rem solid $c-purple;
+  }
+}
+
+// Channel
+.channel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: $m-gutter;
+
+  &-image {
+    width: 2.5rem;
+    padding-right: $m-gutter / 2;
+  }
+
+  &-name {
+    margin: 0;
+  }
+
+  &-status {
+    color: $c-grey;
+    margin: 0;
+    font-weight: 100;
+    font-size: 0.75rem;
+  }
+}
+
+.links {
+  display: flex;
+
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}
+
+.link-list {
+  font-size: 0.75rem;
+  color: $c-grey;
+
+
+  > * {
+    color: $c-slategrey;
+    padding: 0.25rem 0;
+
+    &:hover {
+      color: $c-white;
+    }
+  }
+}
+
+// Buttons
+.buttons {
+  display: flex;
+  width: 100%;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}
+
+.buttons--right {
+  margin-top: $m-gutter;
+}
+
+.button {
+  border: 0;
+  flex-basis: calc(100% / 2 - #{$m-gutter});
+  min-width: 3rem;
+  padding: $m-gutter / 2;
+  background: $c-purple;
+  color: white;
+  font-size: 0.75rem;
+}
+
+
+
+
+
+// Stack styles
+.stack {
+  &__group {
+    &--pad {
+      padding: $m-gutter;
+    }
+  }
+
+  &__item {
+    margin: 0 auto $m-gutter;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.group-header {
+  border-bottom: 0.1rem solid $c-purple;
+  padding-bottom: $m-gutter / 2;
+  font-weight: normal;
+  text-transform: uppercase;
+}

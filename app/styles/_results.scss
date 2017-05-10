@@ -1,0 +1,19 @@
+// RESULT STYLES
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -$m-gutter / 2;
+  margin-right: -$m-gutter / 2;
+
+  > * {
+    flex-basis: calc(100% / 5 - #{$m-gutter / 2} - #{$m-gutter / 2});
+    flex-grow: 1;
+    min-width: 10rem;
+    margin: $m-gutter / 2;
+  }
+}
+
+.results__item {
+  border: 0.1rem solid black;
+}
